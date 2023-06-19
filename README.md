@@ -1,0 +1,2 @@
+# jira-sqlizer
+JiraSQLizerは、Jiraデータの取得とMySQLへのインポートを効率化するツールです。シームレスなデータ統合で、分析やレポート作成が簡単に。
