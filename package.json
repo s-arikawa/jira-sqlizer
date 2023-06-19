@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/s-arikawa/jira-sqlizer#readme",
   "dependencies": {
+    "jira-client": "^8.2.2",
     "prisma": "^4.15.0"
   }
 }
