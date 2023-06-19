@@ -9,3 +9,38 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Project {
+  id             String  @id
+  key            String
+  description    String
+  leadAccountId  String
+  lead           User    @relation(fields: [leadAccountId], references: [accountId])
+  //  issueTypes    ,
+  name           String
+  //  avatarUrls: [Object],
+  //  projectKeys: [Array],
+  projectTypeKey String
+  simplified     Boolean
+  style          String
+  isPrivate      Boolean
+  //  properties: {},
+  //  insight: [Object]
+}
+
+model User {
+  accountId   String    @id
+  accountType String
+  //  avatarUrls: {},
+  displayName String
+  active      Boolean
+  Project     Project[]
+}
+
+model Issue {
+  id        String   @id
+  title     String
+  status    String
+  assignee  String?
+  createdAt DateTime
+}
