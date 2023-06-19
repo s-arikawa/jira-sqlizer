@@ -1,0 +1,22 @@
+{
+  "name": "jira-sqlizer",
+  "version": "0.0.1",
+  "description": "JiraSQLizer is a tool that streamlines the acquisition of data from Jira and its import into MySQL. Achieve seamless data integration for easier analysis and report generation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-arikawa/jira-sqlizer.git"
+  },
+  "author": "s-arikawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s-arikawa/jira-sqlizer/issues"
+  },
+  "homepage": "https://github.com/s-arikawa/jira-sqlizer#readme",
+  "dependencies": {
+    "prisma": "^4.15.0"
+  }
+}
